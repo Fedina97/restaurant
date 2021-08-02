@@ -1,0 +1,772 @@
+@font-face 
+    font-family: Banny 
+    src: url(Banny-BoldRound.woff) 
+
+@mixin flex()
+    display: flex
+    align-items: center
+
+@mixin images-style()
+    width: 475px
+    height: 475px
+    position: relative
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5))
+
+@mixin right-block()
+    position: absolute
+    border: 20px solid #E8C300
+    box-sizing: border-box
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5))
+    border-radius: 5px
+    width: 250px
+    height: 250px
+    right: -120px
+    top: 110px
+
+@mixin left-block()
+    content: ''
+    position: absolute
+    border: 20px solid #E8C300
+    box-sizing: border-box
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5))
+    border-radius: 5px
+    width: 250px
+    height: 250px
+    left: -120px
+    top: 110px
+    
+
+@mixin book()
+    background: #E5E5E5
+    border-radius: 5px 
+    border: none
+    text-indent: 20px
+    width: 276px
+    padding: 21.1px 0
+    margin-bottom: 10px
+    box-sizing: border-box
+    
+    
+
+*
+    font-family: Open Sans
+    margin: 0
+    padding: 0
+
+.swiper-container
+    max-width: 100vw
+    font-weight: 400
+    text-transform: none
+    letter-spacing: normal
+    line-height: 18px
+    color: white
+    background: url(./img/choco-bg.png) center center / cover no-repeat 
+
+    .swiper-wrapper
+
+        .swiper-slide
+            max-height: 100% 
+            width: 100%
+
+            .content-block
+                margin-left: 80px
+
+                img
+                    margin-right: 0
+                    padding-left: 120px
+
+        
+
+    .swiper-pagination-bullet
+        background: #fceb02   
+
+
+h2
+    width: 100%
+    font-family: Banny
+    text-transform: uppercase
+    line-height: 125%
+    font-size: 36px
+    position: relative
+    margin-bottom: 30px
+
+h2:after 
+    position: absolute
+    content: ''
+    width: 59px
+    height: 5px
+    background: #E8C300
+    border-radius: 50px 
+    bottom: -15px
+    left: 45%  
+
+.present 
+    max-height: 800px
+    width: 100%
+    background: url(./img/header-bg.png) center center / cover no-repeat
+
+.container
+    max-width: 1280px
+    margin-left: auto
+    margin-right: auto
+    height: 100%
+
+    .header
+        display: flex
+        justify-content: space-between
+        color: white
+        position: relative
+
+        &__burger
+            // display: none
+            color: white
+            font-size: 35px
+            position: absolute
+            right: 100px
+            top: 40px
+
+        &__left 
+            @include flex()   
+            
+            a 
+                text-decoration: none
+                color: white
+                font-size: 12px
+                line-height: 18px
+                font-weight: 700
+                width: 133px
+                text-align: center
+                padding: 40px 0
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        
+        &__right 
+            @include flex()
+            
+            a 
+                text-decoration: none
+                font-size: 12px
+                line-height: 18px
+                font-weight: 700
+                color: white
+                width: 133px 
+                text-align: center
+                padding: 40px 0
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+        &::after       
+            position: absolute
+            content: ''
+            background: url(img/krug.svg) center center / contain no-repeat
+            width: 150px
+            height: 150px
+            left: 44%
+            top: 25px
+
+.promo__line
+    width: 60px
+    height: 5px
+    margin: 10px auto 31px
+    background: #E8C300
+    border-radius: 50px            
+
+.promo
+    height: 700px
+    color: white
+    display: flex
+
+    &__left
+        padding-top: 18%
+
+        .work__mode
+            writing-mode: vertical-rl
+            transform: rotate(180deg)
+            font-size: 12px      
+
+    &__center
+            display: flex
+            justify-content: center
+            // padding-top: 225px
+            padding-right: 50px
+            padding-left: 50px
+            margin: 0 155px 0 180px
+            flex-direction: column 
+
+            .name
+                text-align: center
+                font-size: 12px
+                font-weight: 700
+                letter-spacing: 0.5em
+                line-height: 14px
+            
+            h1
+                width: 780px
+                text-align: center
+                font-size: 96px
+                font-family: Banny
+                text-transform: uppercase
+
+            .promo__buttons
+                margin-left: auto
+                margin-right: auto
+
+
+                .promo__btn
+                    width: 200px
+                    height: 60px
+                    border-radius: 5px
+                    background: none
+                    color: white
+                    border: 1px solid #ffffff8a
+
+                .promo__btn_menu
+                    background: #E8C300
+                    color: white
+                    margin-right: 40px
+                    border: none
+
+            .promo__arrow
+                margin: 92px auto 0 auto
+                border: 1px solid rgba(255, 255, 255, 0.2)
+                border-radius: 50px
+                width: 60px
+                height: 60px
+                display: flex
+                align-items: center
+                justify-content: center
+                position: relative
+ 
+
+                .fas
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-radius: 50px
+                    background: white
+                    font-size: 20px
+                    color: black
+                    width: 40px
+                    height: 40px
+
+            .promo__arrow:before
+                content: ''
+                position: absolute
+                height: 454px
+                width: 1px
+                background: rgba(255, 255, 255, 0.2)
+                bottom: 60px
+
+            .promo__arrow:after
+                content: ''
+                position: absolute
+                height: 82px
+                width: 1px
+                background: rgba(255, 255, 255, 0.2)
+                top: 60px
+
+
+
+        
+    &__right
+            padding-top: 18%
+
+            .promo__right-icons
+                width: 60px
+                height: 60px
+                background: black
+                @include flex()
+                justify-content: center
+                border-radius: 50px
+                margin-bottom: 20px
+
+                .fab
+                    font-size: 20px 
+
+.align-block 
+    @include flex()
+    padding-bottom: 100px 
+    justify-content: space-evenly
+
+    .our-team__image
+        @include images-style()
+        margin: 0 80px 0 120px
+        background: url(img/master-chef.png) center center / 100% no-repeat
+
+        .left-block
+            content: ''
+            position: absolute
+            border: 20px solid #E8C300
+            box-sizing: border-box
+            filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5))
+            border-radius: 5px
+            width: 250px
+            height: 250px
+            left: -120px
+            top: 110px
+
+    .about__image
+        background: url(img/about-img.png) center center / 100% no-repeat
+        @include images-style()
+        margin: 0 120px 0 80px
+
+        .right-block
+            content: ''
+            position: absolute
+            border: 20px solid #E8C300
+            box-sizing: border-box
+            filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5))
+            border-radius: 5px
+            width: 250px
+            height: 250px
+            right: -120px
+            top: 110px
+       
+
+    .image__book
+        @include images-style()
+        background: url(img/book-a-table.png) center center/ 100% no-repeat
+        margin: 0 120px 0 80px
+        
+        .right-block
+            @include right-block()
+
+    .choco__image
+        @include images-style()
+        background: url(img/choko.png) center center / 100% no-repeat
+        margin: 0 0px 0 120px
+
+        .left-block
+           @include left-block()
+           
+    .content-block
+        width: 600px
+        text-align: center
+        margin: auto 
+
+        p:last-child
+            font-size: 14px 
+            line-height: 24px
+            margin-top: 20px  
+
+.bold-text
+    font-weight: bold
+    font-size: 18px      
+
+
+.our-team 
+    color: white
+    background: url(./img/specialtys-bg.png) center center / cover no-repeat
+
+
+.info
+    padding: 43.5px 0
+    text-align: center
+    font-size: 12px
+    font-weight: 700
+    line-height: 14px
+    letter-spacing: 0.5em
+    text-transform: uppercase
+
+
+.form-block
+    text-align: center   
+
+.events
+    height: 100%
+    background: url(./img/choco-bg.png) center center / cover no-repeat
+
+    .info
+        color: white 
+
+    .event
+        display: flex
+        justify-content: center
+
+        .wedding
+            max-width: 475px
+            margin-right: 80px
+
+    .order
+        color: rgba(255, 255, 255, 0.5)  
+        height: 100px
+        display: flex
+        justify-content: center 
+        align-items: center 
+
+
+
+
+.image-block
+    display: flex
+
+    .image-block__images
+        width: 100%
+        height: 360px
+
+    .first-image
+        background: url(./img/slide1.png) center center/cover no-repeat
+
+    .second-image
+        background: url(./img/slide2.png) center center/cover no-repeat
+    
+    .third-image
+        background: url(./img/slide3png.png) center center/cover no-repeat
+
+    .fourth-image
+        background: url(./img/slide4.png) center center/cover no-repeat
+
+.contact
+    display: flex
+    justify-content: center
+    padding-bottom: 100px
+
+    form
+        margin-top: 50px
+        width: 100%
+
+        input
+            display: flex-inline
+            box-sizing: border-box
+            // width: 416px
+            margin-right: 11px
+            margin-bottom: 11px
+            background: #E5E5E5
+            border: none
+            padding: 10px 0
+            border-radius: 5px
+            text-indent: 20px 
+
+        .col-35
+            width: 32%
+
+        input[type=number]
+            margin-right: 0
+
+        textarea
+            border-radius: 5px
+            padding-top: 15px
+            box-sizing: border-box
+            width: 100% 
+            text-indent: 20px
+            border: none
+            background: #E5E5E5 
+
+    .info-and-button
+        margin-top: 20px
+        @include flex()
+        justify-content: space-between
+
+        .links
+            width: 50%
+            display: flex
+
+            .fas
+                font-size: 14px
+                font-weight: 900
+                color: #E8C300
+
+            a
+                display: block
+                font-size: 12px
+                text-decoration: none
+                color: #807e7e
+                font-weight: 700
+                margin-left: 10px
+                margin-right: 15px
+
+        button
+            border: none
+            background: #E8C300
+            border-radius: 5px
+            padding: 21px 0
+            color: white
+            width: 50%
+
+.heading
+    font-size: 36px
+    font-family: Banny
+    margin-top: 100px
+    margin-bottom: 20px
+    text-align: center
+
+.text 
+    font-weight: 700
+    width: 565px 
+    margin: auto
+    text-align: center
+    margin-bottom: 50px  
+
+.book-a-table
+
+    .align-block
+        padding-bottom: 45px
+
+    .bold
+        color: rgba(51, 51, 51, 0.5)
+        font-size: 12px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-bottom: 50px
+        box-sizing: border-box
+
+        span
+            font-weight: 700
+
+    .form-block
+        width: 566px
+
+        h2
+            grid-column-start: 1
+            grid-column-end: 3
+
+        form
+            display: grid
+            grid-template-columns: repeat(2, 277px)
+            grid-template-rows: repeat(3, 60px)
+            grid-gap: 10px
+
+            input
+                background: #E5E5E5
+                border-radius: 5px 
+                border: none
+                text-indent: 20px
+                width: 100%
+                padding: 21.1px 0
+                // margin-bottom: 10px
+                box-sizing: border-box
+                color: rgba(51, 51, 51, 0.5)
+
+            // input:nth-child(odd)
+            //     margin-right: 10px 
+            .left
+                width: 100%
+                grid-column-start: 1
+                grid-column-end: 2
+
+            .right
+                max-width: 100%
+                grid-column-start: 2
+                grid-column-end: 3
+
+            summary::-webkit-details-marker
+                display: none
+
+            details > summary
+                list-style: none
+
+            // details[open]>summary 
+            //     position: relative
+
+            .people
+                position: relative
+                z-index: 2
+
+                .people-list
+                    height: 100%
+                    @include flex()
+                    border-radius: 5px
+                    background: #E5E5E5 
+                    color: rgba(51, 51, 51, 0.5)
+                    text-align: left
+                    padding: 0 20px
+                    font-size: 13px
+
+                    .people-select
+                        width: 100%
+                        @include flex()
+                        justify-content: space-between
+
+                .details-option
+                    position: absolute
+                    left: 0
+                    width: 277px
+                    background: white
+                    box-sizing: border-box
+                    border: 1px solid gray 
+                    padding: 5px 0 5px 10px
+
+                    p
+                        margin-bottom: 5px
+                        text-align: left
+
+            .time
+                position: relative
+
+                .time-list
+                    height: 100%
+                    @include flex()
+                    border-radius: 5px
+                    background: #E5E5E5 
+                    color: rgba(51, 51, 51, 0.5)
+                    text-align: left
+                    padding: 0 20px
+                    font-size: 13px
+
+                    .time-select
+                        width: 100%
+                        @include flex()
+                        justify-content: space-between
+
+                .details-time-option
+                    position: absolute
+                    left: 0
+                    width: 277px
+                    background: white 
+                    box-sizing: border-box
+                    border: 1px solid gray 
+                    padding: 5px 0 5px 10px
+
+                    .option-time
+                        margin-bottom: 5px
+                        text-align: left
+        
+
+
+            // .select
+            //     @include book()
+            //     overflow: hidden
+            //     background: url(img/arrow.png) no-repeat 96% #ddd
+            //     background-size: 4%
+            //     position: relative
+            //     margin: 0
+            
+            // select
+            //     -webkit-appearance: none
+            //     padding: 5px
+            //     font-size: 14px
+            //     line-height: 1
+            //     border: 0
+            //     border-radius: 0
+            //     color: rgba(51, 51, 51, 0.6)
+
+                // option
+                //     background:  rgba(218, 214, 214, 0.4)
+                //     border-radius: 0 0 5px 5px
+
+
+                    
+
+
+        button
+            grid-column-start: 1
+            grid-column-end: 3
+            grid-row-start: 5
+            border: none
+            background: #E8C300
+            border-radius: 5px
+            color: white
+            width: 100%
+            margin-top: 10px
+            font-weight: 700
+            padding: 21.1px 0
+
+.menu
+
+    .menu-select
+        text-align: center
+
+        .menu-button
+            border: none
+            border-right: 1px solid rgba(51, 51, 51, 0.2)
+            background: none
+            font-size: 12px
+            font-weight: 700
+            text-align: center
+            line-height: 18px
+            padding: 20px 46px
+
+        .menu-button:last-child
+            border: none
+
+    .menu-items
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 51px
+        margin-bottom: 66px
+        line-height: 18px
+
+        .menu-products
+            min-width: 363px
+            margin-bottom: 34px
+
+            .name-price
+                display: flex
+                color: #333333
+
+                .name
+                    font-family: Banny
+                    font-size: 18px
+
+                .price
+                    font-family: Banny
+                    font-size: 18px
+                    line-height: 18px
+
+            .description
+                font-size: 12px
+                line-height: 18px
+                color: rgba(51, 51, 51, 0.5)
+
+.map
+    height: 475px
+
+    iframe
+        height: 100%
+
+.arrow-up
+    text-decoration: none
+    display: none
+    position: fixed
+    z-index: 5
+    bottom: 90px
+    right: 50px
+    animation: tada 1s infinite
+    border-radius: 50px
+    border: 2px solid  rgba(132, 92, 20, 0.639)
+    width: 80px
+    height: 80px
+
+    @keyframes tada 
+        0% 
+            transform: scale3d(1, 1, 1)
+        
+        30%, 50%, 70%, 90% 
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+        
+        40%, 60%, 80% 
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+        
+        100% 
+            transform: scale3d(1, 1, 1)
+  
+  
+
+    .arrow-icon
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+        i
+            background: #E8C300
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50px
+            color: white
+            width: 50px
+            height: 50px
+            font-size: 29px
+
+footer
+    height: 100px
+    background: rgba(0, 0, 0, 0.9)
+
+    .footer-copy
+        color: rgba(255, 255, 255, 0.5)
+        border-radius: 5px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center

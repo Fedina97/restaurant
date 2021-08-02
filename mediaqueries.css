@@ -1,0 +1,422 @@
+@media screen and (min-width: 320px) and (max-width: 767.9px) {
+    .header__burger {
+        display: block;
+        right: 30px;
+    }
+
+    .menu-open {
+        height: 385px;
+        box-shadow: 8px 10px 8px -1px #16161564;
+    }
+
+    h2 {
+        font-size: 25px;
+        /* max-width: 90%; */
+    }
+
+    .heading {
+        margin-top: 55px;
+        font-size: 25px;
+    }
+
+    .working-time {
+        text-align: center;
+    }
+
+    .bold-text {
+        font-size: 14px;
+    }
+
+    .swiper-slide .content-block {
+        margin: 0;
+        max-width: 90%;
+    }
+
+    .swiper-slide .bold-text {
+        max-width: 100%;
+    }
+
+    .swiper-slide h2 {
+        max-width: 100%;
+    }
+
+    .header::after {
+        top: -10px;
+        left: 44.5%;
+    }
+
+    .header__left a {
+        display: none;
+    }
+
+    .header__right a {
+        display: none;
+    }
+
+    .promo {
+        padding-bottom: 50px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promo-align {
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .promo__left {
+        display: none;
+    }
+
+    .promo__center {
+        height: 100%;
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promo__buttons {
+        margin-bottom: 30px;
+    }
+
+    .promo__btn {
+        max-width: 110px;
+        height: 50px;
+    }
+
+    .promo__center .promo__arrow {
+        margin-top: 50px;
+    }
+
+    .promo__right {
+        display: none;
+        margin-right: 15px;
+    }
+
+    h1.hungry-people {
+        /* max-width: 768px; */
+        font-size: 48px;
+    }
+
+    .container .down {
+        margin-bottom: 30px;
+    }
+
+    .container .up {
+        margin-top: 30px;
+    }
+
+    .swiper-slide {
+        width: 100vw;
+    }
+
+    .event {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .wedding {
+        margin: 0 0 30px 0;
+    }
+
+    .image-block {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .align-block {
+        margin: 0 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .down,
+    .up {
+        width: 350px;
+        height: 350px;
+    }
+
+    .right-block {
+        display: none;
+    }
+
+    .left-block {
+        display: none;
+    }
+
+    .form-block form {
+        margin: 0 20px;
+        grid-template-columns: minmax(250px, 80%);
+        grid-template-rows: repeat(6, 60px);
+        justify-content: center;
+    }
+
+    .form-block button {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+    }
+
+    .form-block .right {
+        max-width: 100%;
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .right-block {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .contact form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact input {
+        max-width: 100%;
+    }
+
+    .info-and-button {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column-reverse;
+        max-width: 90%;
+        /* align-items: flex-start; */
+    }
+
+    .info-and-button button {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact .container {
+        margin: 0 auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-item {
+        margin-top: 15px;
+    }
+
+    .menu-items {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 60px);
+    }
+
+    .contact input {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .contact textarea {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .swiper-wrapper .align-block {
+        margin: 0;
+    }
+
+    .about__image,
+    .image__book,
+    .our-team__image,
+    .choco__image {
+        margin: 0 80px;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    .event img {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+    .header__burger {
+        display: block;
+    }
+
+    .menu-open {
+        box-sizing: border-box;
+        padding-left: 85px;
+        width: 50%;
+        right: 0;
+    }
+
+    .menu-open__items {
+        align-items: flex-end;
+    }
+
+    ul li {
+        padding-right: 45px;
+        text-align: right;
+    }
+
+    .swiper-slide .content-block {
+        margin: 0;
+    }
+
+    .header__left a {
+        display: none;
+    }
+
+    .promo {
+        height: 600px;
+        box-sizing: border-box;
+        padding-top: 100px;
+        align-items: flex-end
+    }
+
+    .header__right a {
+        display: none;
+    }
+
+    .header::after {
+        left: 44.5%;
+    }
+
+    .promo__center {
+        height: 100%;
+        /* margin: 0 155px 0 145px;
+        padding: 0; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promo__center h1 {
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .wedding {
+        margin: 0 0 30px 0;
+    }
+
+    .event {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .event {
+        align-items: center;
+    }
+
+
+    .align-block {
+        flex-direction: column-reverse;
+    }
+
+    .choco__image {
+        margin-left: 0;
+    }
+
+    .menu-items {
+        justify-content: center;
+    }
+
+    .menu-items .menu-products:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+    .contact form {
+        grid-template-columns: repeat(3, minmax(225px, 412px));
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424.9px) {
+    .container .header::after {
+        top: -10px;
+        left: 5%;
+    }
+
+    h1.hungry-people {
+        font-size: 28px;
+    }
+
+    .menu-open {
+        height: 297px;
+    }
+
+    .heading {
+        margin-top: 55px;
+        font-size: 25px;
+    }
+
+    .price {
+        color: tomato;
+        margin: 10px 0;
+    }
+
+    .header__left a {
+        display: none;
+    }
+
+    .header__right a {
+        display: none;
+    }
+
+    .about__image,
+    .image__book,
+    .our-team__image,
+    .choco__image {
+        margin: 0;
+    }
+
+    .down,
+    .up {
+        width: 300px;
+    }
+
+    .name-price {
+        flex-direction: column;
+    }
+
+    .name-price span {
+        display: none;
+    }
+
+    .promo__arrow {
+        display: none;
+    }
+
+    .menu-open {
+        box-shadow: 8px 10px 8px -1px #16161564;
+    }
+}
+
+@media screen and (hover:hover) {
+    .menu-open__items:hover {
+        color: #e0a708;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@media (min-width: 1090px) {
+    .header__burger {
+        display: none;
+    }
+
+    .menu-open {
+        display: none;
+    }
+}
